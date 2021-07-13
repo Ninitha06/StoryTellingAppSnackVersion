@@ -111,7 +111,7 @@ export default class Profile extends React.Component {
                 Dark Theme
               </Text>
               <Switch
-                style={{ transform: [{ scaleX: 1.3, scaleY: 1.3 }] }}
+                style={{ transform: [{ scaleX: 1.3}, {scaleY: 1.3 }] }}
                 trackColor={{ false: '#767577', true: 'white' }}
                 thumbColor={this.state.isEnabled ? '#ee8249' : '#f4f3f4'}
                 ios_backgroundColor="#3e3e3e"
