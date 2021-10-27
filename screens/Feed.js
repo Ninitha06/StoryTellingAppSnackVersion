@@ -107,7 +107,7 @@ export default class CreateStory extends React.Component {
           ) :
         (<View style={styles.cardContainer}>
           <FlatList
-            keyExtractor={(item, index) => index.toString()}
+            keyExtractor={(item, index) =>  item.key}
             renderItem={this.renderItem}
             data={stories}
           />
