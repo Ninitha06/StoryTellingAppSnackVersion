@@ -41,13 +41,18 @@ export default class DrawerNavigator extends React.Component {
   }
 
   render() {
+    //5.x version code
+    //  drawerLabelStyle={{
+        //   activeTintColor: '#e91e63',
+        //   inactiveTintColor: this.state.lightTheme ? 'black' : 'white',
+        //   itemStyle: { marginVertical: 5 },
+        // }}
     return (
       <Drawer.Navigator
-        drawerContentOptions={{
-          activeTintColor: '#e91e63',
-          inactiveTintColor: this.state.lightTheme ? 'black' : 'white',
-          itemStyle: { marginVertical: 5 },
-        }}
+        screenOptions={{ headerShown: false,
+        drawerActiveTintColor : '#e91e63',
+        drawerInactiveTintColor :  this.state.lightTheme ? 'black' : 'white' ,
+        drawerItemStyle : { marginVertical: 5 } }}
         drawerContent={(props) => <CustomSideBarMenu {...props}/>}>
         <Drawer.Screen
           name="Home"
